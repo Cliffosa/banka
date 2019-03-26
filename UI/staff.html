@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banka | Staff | Dashboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <div class="brand">
+                <a href="index.html"><i class="fas fa-money-check"></i>&nbsp;&nbsp;Banka</a>
+            </div>
+            <ul>
+                <li><a href="admin.html"><i class="fas fa-user-secret"></i> Admin</a></li>
+                <li><a href="staff.html"><i class="fas fa-user"></i> Cashier</a></li>
+                <li><a href="signin.html"><i class="fas fa-lock"></i> Login</a></li>
+                <li><a href="signup.html "><i class="fa-user-lock"></i> Register</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
+            <div class="clear"></div>
+        </nav>
+    </div>
+</body>
+<main class="container">
+    <section class="cta">
+        <h2>All Accounts Holder</h2>
+    </section>
+    <section class="d-sidebar">
+        <h3>Staff Dashboard</h3>
+        <ul>
+            <li><a href="staff.html">View Accounts</a></li>
+            <li><a href="credit.html">Credit User Account</a></li>
+            <li><a href="debit.html">Debit User Account</a></li>
+        </ul>
+    </section>
+    <section>
+        <div id="all-trans">
+            <div class="acct-msg">
+                <table class="all-trans-table">
+                    <tr>
+                        <th>Account Number</th>
+                        <th>Holder's Name</th>
+                        <th>Holder's email</th>
+                        <th>Acccount Type</th>
+                        <th>Details</th>
+                        <th colspan="4">Action</th>
+                    </tr>
+                    <tr>
+                        <td>09057996214</td>
+                        <td>Nkem Tobi</td>
+                        <td>nkem_tobi@gmail.com</td>
+                        <td>Current</td>
+                        <td><a href="staff-single-acct.html">Details</a></td>
+                        <th><a href="#">Delete</a></th>
+                    </tr>
+                    <tr>
+                        <td>07060538862</td>
+                        <td>Clifford Okoro</td>
+                        <td>cliff@gmail.com</td>
+                        <td>Savings</td>
+                        <td><a href="staff-single-acct.html">Details</a></td>
+                        <th><a href="#">Delete</a></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</body>
+
+</html>

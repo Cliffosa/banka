@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banka | All | Admins</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <div class="brand">
+                <a href="index.html"><i class="fas fa-money-check"></i>&nbsp;&nbsp;Banka</a>
+            </div>
+            <ul>
+                <li><a href="admin.html"><i class="fas fa-user-secret"></i> Admin</a></li>
+                <li><a href="staff.html"><i class="fas fa-user"></i> Cashier</a></li>
+                <li><a href="signin.html"><i class="fas fa-lock"></i> Login</a></li>
+                <li><a href="signup.html "><i class="fa-user-lock"></i> Register</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
+            <div class="clear"></div>
+        </nav>
+    </div>
+</body>
+<main class="container">
+    <section class="cta">
+        <h2>Account Overview</h2>
+    </section>
+    <section class="d-sidebar">
+        <h3>Account Dashboard</h3>
+        <ul>
+            <li><a href="account-dashboard.html">View Accounts</a></li>
+            <li><a href="create-admin.html">Create Admin/Staff Account</a></li>
+            <li><a href="admin.html">View Admins/Staff</a></li>
+        </ul>
+    </section>
+    <section class="transactions-table">
+        <section class="trans-filter">
+            <form>
+                <label for="filter-acct">Search Account ID</label>
+                <input type="number" id="filter-acct" name="filter-acct" placeholder="Account Number" required />
+                <button>Search</button>
+            </form>
+        </section>
+
+        <section id="all-trans">
+            <h3>Details of Admin/Staff</h3>
+            <div class="acct-msg">
+
+                <table class="all-trans-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Clifford</td>
+                    <td>Admin</td>
+                    <td>cliff@banka.com</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Nkem</td>
+                    <td>Staff</td>
+                    <td>nkem@banka.com</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Tobi</td>
+                    <td>Admin</td>
+                    <td>tobi@banka.com</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                </table>
+            </div>
+        </section>
+    </section>
+
+</main>
+
+</body>
+</body>
+
+</html>

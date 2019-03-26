@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banka | User | History</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <div class="brand">
+                <a href="index.html"><i class="fas fa-money-check"></i>&nbsp;&nbsp;Banka</a>
+            </div>
+            <ul>
+                <li><a href="admin.html"><i class="fas fa-user-secret"></i> Admin</a></li>
+                <li><a href="staff.html"><i class="fas fa-user"></i> Cashier</a></li>
+                <li><a href="signin.html"><i class="fas fa-lock"></i> Login</a></li>
+                <li><a href="signup.html "><i class="fa-user-lock"></i> Register</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
+            <div class="clear"></div>
+        </nav>
+    </div>
+</body>
+<main class="container">
+    <section class="cta">
+        <h2>Account Overview</h2>
+    </section>
+    <section class="d-sidebar">
+        <h3>Account Dashboard</h3>
+        <ul>
+            <li><a href="account-dashboard.html">View Accounts</a></li>
+            <li><a href="create-admin.html">Create Admin/Staff Account</a></li>
+            <li><a href="admin.html">View Admins/Staff</a></li>
+        </ul>
+    </section>
+    <section class="transactions-table">
+        <div class="trans-filter">
+            <form>
+                <label for="filter-acct">Search Account ID</label>
+                <input type="number" id="filter-acct" name="filter-acct" placeholder="Account Number" required />
+                <button>Search</button>
+            </form>
+        </div>
+        <div id="all-trans">
+            <div class="acct-msg">
+                <h2>Account Details</h2>
+                <table class="all-trans-table">
+                    <tr>
+                        <th>Account Number</th>
+                        <th>Recent Deposit</th>
+                        <th>Recent Withdrawal</th>
+                        <th>Created At</th>
+                        <th>Balance</th>
+                    </tr>
+                    <tr>
+                        <td>07060538862</td>
+                        <td>15/03/2019</td>
+                        <td>16/03/2019</td>
+                        <td>17/03/2019</td>
+                        <td>&#8358; 600000</td>
+                    </tr>
+                    <tr>
+                        <td>07060538862</td>
+                        <td>15/03/2019</td>
+                        <td>16/03/2019</td>
+                        <td>17/03/2019</td>
+                        <td>&#8358; 600000</td>
+                    </tr>
+                    <tr>
+                        <td>07060538862</td>
+                        <td>15/03/2019</td>
+                        <td>16/03/2019</td>
+                        <td>17/03/2019</td>
+                        <td>&#8358; 600000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</body>
+
+</html>

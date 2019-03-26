@@ -302,7 +302,6 @@ select {
 }
 button {
   background: black;
-  width: 100%;
   border: 2px solid coral;
   color: #fff;
   padding: 5px 0 5px 5px;

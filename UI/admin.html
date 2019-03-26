@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Banka | User | History</title>
+    <title>Banka | All | Admins</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -35,56 +35,52 @@
     <section class="d-sidebar">
         <h3>Account Dashboard</h3>
         <ul>
-            <li><a href="create-account.html">Create Bank Account</a></li>
-            <li><a href="all-transactions.html">View All Transaction</a></li>
-            <li><a href="account-record.html">Transaction History</a></li>
+            <li><a href="account-dashboard.html">View Accounts</a></li>
+            <li><a href="create-admin.html">Create Admin/Staff Account</a></li>
+            <li><a href="admin.html">View Admins/Staff</a></li>
         </ul>
     </section>
     <section class="transactions-table">
-        <div class="trans-filter">
+        <section class="trans-filter">
             <form>
                 <label for="filter-acct">Search Account ID</label>
                 <input type="number" id="filter-acct" name="filter-acct" placeholder="Account Number" required />
                 <button>Search</button>
             </form>
-        </div>
-        <div id="all-trans">
-            <h3> Welcome, Clifford</h3>
-            <P>Please, below is your transaction details</P>
+        </section>
+
+        <section id="all-trans">
+            <h3>Details of Admin/Staff</h3>
             <div class="acct-msg">
-                <h2>Account Details</h2>
-                <table border="1" class="all-trans-table">
-                    <tr>
-                        <th>Account Number</th>
-                        <th>Recent Deposit</th>
-                        <th>Recent Withdrawal</th>
-                        <th>Balance</th>
-                        <th>Created At</th>
-                    </tr>
-                    <tr>
-                        <td>07060538862</td>
-                        <td>&#8358;70000</td>
-                        <td>&#8358;60000</td>
-                        <td>&#8358;10000</td>
-                        <td>17/03/2019</td>
-                    </tr>
-                    <tr>
-                        <td>07060538862</td>
-                        <td>&#8358;70000</td>
-                        <td>&#8358;60000</td>
-                        <td>&#8358;10000</td>
-                        <td>17/03/2019</td>
-                    </tr>
-                    <tr>
-                        <td>07060538862</td>
-                        <td>&#8358;70000</td>
-                        <td>&#8358;60000</td>
-                        <td>&#8358;10000</td>
-                        <td>17/03/2019</td>
-                    </tr>
+
+                <table class="all-trans-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Clifford</td>
+                    <td>Admin</td>
+                    <td>cliff@banka.com</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Nkem</td>
+                    <td>Staff</td>
+                    <td>nkem@banka.com</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Tobi</td>
+                    <td>Admin</td>
+                    <td>tobi@banka.com</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
                 </table>
             </div>
-        </div>
+        </section>
     </section>
 
 </main>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Banka | User | History</title>
+    <title>Banka | Staff | Dashboard</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -30,57 +30,43 @@
 </body>
 <main class="container">
     <section class="cta">
-        <h2>Account Overview</h2>
+        <h2>All Accounts Holder</h2>
     </section>
     <section class="d-sidebar">
-        <h3>Account Dashboard</h3>
+        <h3>Staff Dashboard</h3>
         <ul>
-            <li><a href="create-account.html">Create Bank Account</a></li>
-            <li><a href="all-transactions.html">View All Transaction</a></li>
-            <li><a href="account-record.html">Transaction History</a></li>
+            <li><a href="staff.html">View Accounts</a></li>
+            <li><a href="credit.html">Credit User Account</a></li>
+            <li><a href="debit.html">Debit User Account</a></li>
         </ul>
     </section>
-    <section class="transactions-table">
-        <div class="trans-filter">
-            <form>
-                <label for="filter-acct">Search Account ID</label>
-                <input type="number" id="filter-acct" name="filter-acct" placeholder="Account Number" required />
-                <button>Search</button>
-            </form>
-        </div>
+    <section>
         <div id="all-trans">
-            <h3> Welcome, Clifford</h3>
-            <P>Please, below is your transaction details</P>
             <div class="acct-msg">
-                <h2>Account Details</h2>
-                <table border="1" class="all-trans-table">
+                <table class="all-trans-table">
                     <tr>
                         <th>Account Number</th>
-                        <th>Recent Deposit</th>
-                        <th>Recent Withdrawal</th>
-                        <th>Balance</th>
-                        <th>Created At</th>
+                        <th>Holder's Name</th>
+                        <th>Holder's email</th>
+                        <th>Acccount Type</th>
+                        <th>Details</th>
+                        <th colspan="4">Action</th>
+                    </tr>
+                    <tr>
+                        <td>09057996214</td>
+                        <td>Nkem Tobi</td>
+                        <td>nkem_tobi@gmail.com</td>
+                        <td>Current</td>
+                        <td><a href="staff-single-acct.html">Details</a></td>
+                        <th><a href="#">Delete</a></th>
                     </tr>
                     <tr>
                         <td>07060538862</td>
-                        <td>&#8358;70000</td>
-                        <td>&#8358;60000</td>
-                        <td>&#8358;10000</td>
-                        <td>17/03/2019</td>
-                    </tr>
-                    <tr>
-                        <td>07060538862</td>
-                        <td>&#8358;70000</td>
-                        <td>&#8358;60000</td>
-                        <td>&#8358;10000</td>
-                        <td>17/03/2019</td>
-                    </tr>
-                    <tr>
-                        <td>07060538862</td>
-                        <td>&#8358;70000</td>
-                        <td>&#8358;60000</td>
-                        <td>&#8358;10000</td>
-                        <td>17/03/2019</td>
+                        <td>Clifford Okoro</td>
+                        <td>cliff@gmail.com</td>
+                        <td>Savings</td>
+                        <td><a href="staff-single-acct.html">Details</a></td>
+                        <th><a href="#">Delete</a></th>
                     </tr>
                 </table>
             </div>

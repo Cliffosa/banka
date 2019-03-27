@@ -223,7 +223,10 @@ h3 {
   color: coral;
   text-align: center;
   text-transform: capitalize;
-  margin-top: 50px;
+  margin-top: 0px;
+  background-color: #222222;
+  padding: 30px;
+  border-top: 2px solid coral;
 }
 
 .container {
@@ -341,8 +344,8 @@ select {
 
 /* ==================Footer styling==================*/
 #footer {
-  background-color: rgba(136, 200, 252, 0.5);
-  color: #000;
+  background-color: #222222;
+  color: #fff;
   padding: 20px;
   text-align: center;
   margin-top: 30px;
@@ -352,9 +355,9 @@ select {
   text-align: center;
 }
 #footer p span {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 18px;
-  color: #16174f;
+  color: coral;
   font-weight: 900;
 }
 

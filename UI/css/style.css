@@ -342,31 +342,6 @@ select {
   font-style: italic;
 }
 
-/* ==================Footer styling==================*/
-#footer {
-  background-color: #222222;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 12px;
-}
-#footer p {
-  text-align: center;
-}
-#footer p span {
-  text-transform: capitalize;
-  font-size: 18px;
-  color: coral;
-  font-weight: 900;
-}
-
-#footer a {
-  color: #fff;
-  text-decoration: none;
-  font-style: italic;
-}
-
 @media (max-width: 468px) {
   nav {
     height: 70%;
@@ -389,11 +364,6 @@ select {
   }
   .cta {
     top: 40%;
-  }
-  #footer {
-    background-color: #787778;
-    padding: 10px;
-    margin-top: 0;
   }
 
   .btn-info:first-child,

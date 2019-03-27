@@ -13,7 +13,7 @@ body {
 header {
   position: relative;
   background: rgba(0, 0, 0, 0.8);
-  overflow: hidden;
+  overflow: auto;
 }
 
 header:before {
@@ -227,11 +227,12 @@ h3 {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0 auto;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .d-sidebar {
@@ -248,7 +249,7 @@ h3 {
   float: right;
   margin-top: 60px;
   border-radius: 10px 20px 10px 20px;
-  width: 70%;
+  width: 68%;
   color: #fff;
   height: auto;
   padding: 20px;
@@ -361,4 +362,84 @@ select {
   color: #fff;
   text-decoration: none;
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 50%;
+    display: block;
+    background: #49b1e5;
+  }
+  ul {
+    float: none;
+    padding: 0;
+    list-style: none;
+  }
+
+  .brand,
+  li {
+    float: none;
+    text-align: center;
+  }
+
+  li:hover {
+    border-bottom: none;
+  }
+  .cta {
+    position: relative;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .container,
+  .d-sidebar,
+  .d-main,
+  .login-register-form,
+  .register-form {
+    width: 100%;
+    height: auto;
+  }
+  .all-trans-table {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 960px) {
+  nav {
+    height: 45%;
+    display: block;
+    background: #49b1e5;
+  }
+  ul {
+    float: none;
+    padding: 0;
+    list-style: none;
+  }
+
+  .brand,
+  li {
+    float: none;
+    text-align: center;
+  }
+  li:hover {
+    border-bottom: none;
+  }
+  .cta {
+    position: relative;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .container,
+  .d-sidebar,
+  .d-main,
+  .login-register-form,
+  .register-form {
+    width: 100%;
+    height: auto;
+  }
 }

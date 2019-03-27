@@ -21,17 +21,17 @@
                 <li><a href="admin.html"><i class="fas fa-user-secret"></i> Admin</a></li>
                 <li><a href="staff.html"><i class="fas fa-user"></i> Cashier</a></li>
                 <li><a href="signin.html"><i class="fas fa-lock"></i> Login</a></li>
-                <li><a href="signup.html "><i class="fa-user-lock"></i> Register</a></li>
+                <li><a href="signup.html "><i class="fas fa-user-lock"></i> Register</a></li>
             </ul>
             <div class="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
             <div class="clear"></div>
         </nav>
     </div>
 </body>
+<section class="welcome">
+    <h2>Account Overview</h2>
+</section>
 <main class="container">
-    <section class="cta">
-        <h2>Account Overview</h2>
-    </section>
     <section class="d-sidebar">
         <h3>Account Dashboard</h3>
         <ul>
@@ -40,21 +40,26 @@
             <li><a href="transaction-history.html">Transaction History</a></li>
         </ul>
     </section>
-    <section>
+    <section class="d-main">
         <form>
-        <h1>Create Your Secure Account</h1>
+        <h1>Create Banka Account</h1>
+        <label for="fullname">Fullname: </label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter fullname" required />
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required />
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone" required />
         <label for="account-type">Account Type: </label>
         <select id="acccount-type" required>
-            <option disabled selected>Select any...</option>
+            <option disabled selected>Select Account Type...</option>
             <option value="current">Savings</option>
             <option value="savings">Current</option>
         </select>
             <label for="password">Password: </label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required />
-            <input type="checkbox" id="terms" name="terms" required>
             <span id="terms-msg">By clicking on create bank account, you agree to our
                 <a href="#">Account terms and conditions</a></span>
-            <button>Create Bank Account</button>
+            <button class="btn">Create Bank Account</button>
         </form>
     </section>
 

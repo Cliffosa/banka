@@ -332,6 +332,8 @@ h3 {
 .all-trans-table {
   width: 100%;
   height: auto;
+  border-collapse: collapse;
+  overflow-x: auto;
 }
 
 .all-trans-table th {
@@ -341,10 +343,18 @@ h3 {
   background: #feb501;
   border-radius: 3px;
 }
+tr:nth-child(even):hover {
+  background: #d595f8;
+}
+tr:nth-child(odd):hover {
+  background: #46442c;
+}
 
+th,
 td {
   font-size: 16px;
   padding: 8px;
+  border: 2px solid #ddd;
 }
 
 .d-main input {
@@ -469,8 +479,10 @@ select {
     border-radius: 8px;
   }
   .all-trans-table {
-    width: 40%;
+    width: 100%;
     height: auto;
+    overflow-x: auto;
+    font-size: 12px;
   }
   .d-sidebar .b-setting {
     margin: 0;

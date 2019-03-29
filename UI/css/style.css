@@ -2,7 +2,7 @@ html,
 body,
 header {
   height: 100%;
-  background-color: #f4f4f4;
+  background-color: #f3e6e6;
 }
 
 body {
@@ -19,7 +19,6 @@ header {
 header:before {
   content: '';
   position: absolute;
-  background: blue;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -32,7 +31,7 @@ header:before {
 nav {
   padding: 5px 15%;
   height: 60px;
-  background: #49b1e5;
+  background: #702699;
 }
 
 ul {
@@ -51,7 +50,7 @@ ul {
 }
 
 .d-sidebar ul li a:hover {
-  background: coral;
+  background: #feb501;
   color: #fff;
   padding: 10px;
   width: 50%;
@@ -63,12 +62,12 @@ li {
   float: left;
 }
 .brand a {
-  color: #16174f;
+  color: #fbbc00;
 }
 
 .brand a:hover {
   color: #fff;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #feb501;
 }
 
 .brand {
@@ -90,11 +89,11 @@ li a {
 }
 
 li a:hover {
-  color: coral;
+  color: #feb501;
 }
 
 li:hover {
-  border-bottom: 1px solid coral;
+  border-bottom: 1px solid #feb501;
   transition: 500ms;
 }
 
@@ -135,12 +134,12 @@ p {
 
 .btn-info:first-child {
   margin-right: 20px;
-  background-color: #49b1e5;
+  background-color: #feb501;
 }
 
 .btn-info:last-child {
   margin-right: 20px;
-  background-color: coral;
+  background-color: #feb501;
 }
 
 a {
@@ -151,14 +150,22 @@ a.btn-info {
   color: white;
   text-decoration: none;
   padding: 10px 30px;
-  border: 1px solid white;
+  border: 1px solid #feb501;
   border-radius: 8px;
 }
+#btn-signup {
+  background: #702699;
+  border: none;
+}
 .btn-info:first-child:hover {
-  background-color: coral;
+  background-color: #702699;
 }
 a.btn-info:hover {
-  background: #49b1e5;
+  background: #feb501;
+  border: none;
+}
+#btn-signup:hover {
+  background: #feb501;
   border: none;
 }
 
@@ -168,7 +175,7 @@ a.btn-info:hover {
   width: 350px;
   margin: 0 auto;
   color: #fff;
-  background-color: #49b1e5;
+  background-color: #feb501;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border-radius: 15px 5px 15px 5px;
@@ -179,7 +186,7 @@ a.btn-info:hover {
   width: 350px;
   margin: 30px auto;
   color: #fff;
-  background-color: #49b1e5;
+  background-color: #feb501;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border-radius: 15px 5px 15px 5px;
@@ -191,7 +198,7 @@ h3 {
 }
 .login-register-form h3 {
   float: left;
-  border-bottom: 1px solid #49b1e5;
+  border-bottom: 1px solid#FEB501;
   margin-bottom: 30px;
   padding: 13px 0;
   text-align: center;
@@ -206,7 +213,7 @@ h3 {
   font-size: 20px;
   padding: 10px 0;
   margin: 10px 0;
-  border-bottom: 1px solid #49b1e5;
+  border-bottom: 1px solid #feb501;
 }
 .textbox input {
   border: none;
@@ -222,7 +229,7 @@ h3 {
 .btn {
   background: none;
   width: 100%;
-  border: 2px solid #49b1e5;
+  border: 2px solid #feb501;
   color: #fff;
   padding: 5px 0 5px 5px;
   font-size: 14px;
@@ -232,18 +239,18 @@ h3 {
 }
 
 .btn:hover {
-  background-color: #49b1e5;
+  background-color: #feb501;
   border: none;
 }
 
 .welcome {
-  color: coral;
+  color: #f4f4f4;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin-top: 0px;
-  background-color: #222222;
+  background-color: #a85aa7;
   padding: 30px;
-  border-top: 2px solid coral;
+  border-top: 2px solid #feb501;
 }
 
 .container {
@@ -260,14 +267,14 @@ h3 {
   width: 26%;
   border: 1px solid white;
   margin-top: 60px;
-  background-color: #16174f;
+  background-color: #5f515e;
   border-radius: 10px 20px 10px 20px;
 }
 
 .d-sidebar .profile-img {
   width: auto;
   height: 200px;
-  background-color: #16174f;
+  background-color: #5f515e;
   margin-bottom: 150px;
   border-radius: 50%;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
@@ -288,13 +295,13 @@ h3 {
   cursor: pointer;
 }
 .d-sidebar h3 {
-  background: coral;
+  background: #feb501;
   padding: 10px;
   border-radius: 10px 20px 10px 20px;
   text-transform: uppercase;
 }
 .d-main {
-  background: #16174f;
+  background: #5f515e;
   float: right;
   margin-top: 60px;
   border-radius: 10px 20px 10px 20px;
@@ -307,7 +314,7 @@ h3 {
 .d-main form {
   max-width: 500px;
   margin: 2rem auto;
-  border: 2px solid #e74c3c;
+  border: 2px solid #feb501;
   padding: 2rem;
   border-radius: 8px;
 }
@@ -316,7 +323,8 @@ h3 {
   padding: 1rem;
   text-transform: uppercase;
   font-size: 14px;
-  color: coral;
+  color: #fff;
+  font-weight: bold;
 }
 .all-trans-table {
   width: 100%;
@@ -327,17 +335,17 @@ h3 {
   color: #fff;
   padding: 5px;
   text-transform: uppercase;
-  background: rgb(230, 187, 171);
+  background: #feb501;
   border-radius: 3px;
 }
 
 td {
-  font-size: 18px;
+  font-size: 16px;
   padding: 8px;
 }
 
 .d-main input {
-  border: 2px solid #2980b9;
+  border: 2px solid #feb501;
   outline: none;
   width: 96%;
   color: rgb(49, 45, 45);
@@ -353,7 +361,7 @@ select {
   box-sizing: border-box;
   display: inline-block;
   padding: 0.5rem;
-  border: 2px solid #2980b9;
+  border: 2px solid #feb501;
   outline: none;
   font-size: 18px;
 }
@@ -367,13 +375,13 @@ select {
   border-radius: 10px;
 }
 .edit-btn {
-  background: lightgreen;
+  background: #feb501;
   border-radius: 5px;
   font-weight: bold;
 }
 
 .del-btn {
-  background: lightcoral;
+  background: rgb(241, 85, 85);
   border-radius: 5px;
   font-weight: bold;
 }
@@ -384,19 +392,26 @@ select {
   display: inline-block;
 }
 #terms-msg a {
-  color: lightcoral;
+  color: #feb501;
   font-style: italic;
 }
 /* ==================Footer styling==================*/
 #footer {
-  background-color: coral;
-  color: #fff;
+  background-color: #d595f8;
+  color: #ffffff;
   padding: 20px;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 16px;
+  margin-top: 10px;
+  font-size: 14px;
+  height: 60px;
 }
-
+#footer,
+#footer p {
+  text-align: center;
+}
+#footer span {
+  color: #feb501;
+  font-weight: bold;
+}
 #footer a {
   color: #fff;
   text-decoration: none;
@@ -407,7 +422,7 @@ select {
   nav {
     height: 70%;
     display: block;
-    background: #696d6e;
+    background: #702699;
   }
   h1 span {
     font-size: 24px;
@@ -446,7 +461,7 @@ select {
   }
   .d-main form {
     margin: 2rem auto;
-    border: 2px solid #e74c3c;
+    border: 2px solid #feb501;
     padding: 2rem;
     border-radius: 8px;
   }
@@ -480,7 +495,7 @@ select {
   nav {
     height: 50%;
     display: block;
-    background: #49b1e5;
+    background: #5e1b8c;
   }
   ul {
     float: none;
@@ -535,7 +550,7 @@ select {
   nav {
     height: 45%;
     display: block;
-    background: #49b1e5;
+    background: #5e1b8c;
   }
   ul {
     float: none;

@@ -387,6 +387,21 @@ select {
   color: lightcoral;
   font-style: italic;
 }
+/* ==================Footer styling==================*/
+#footer {
+  background-color: coral;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+}
 
 @media (max-width: 468px) {
   nav {

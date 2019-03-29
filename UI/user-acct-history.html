@@ -18,9 +18,7 @@
     <div id="header">
       <nav>
         <div class="brand">
-          <a href="index.html"
-            ><i class="fas fa-money-check"></i>&nbsp;&nbsp;Banka</a
-          >
+          <a href="index.html"><i class="fas fa-money-check"></i>&nbsp;&nbsp;Banka</a>
         </div>
         <ul>
           <li>
@@ -28,6 +26,9 @@
           </li>
           <li>
             <a href="staff.html"><i class="fas fa-user"></i> Cashier</a>
+          </li>
+          <li>
+            <a href="account-record.html"><i class="fas fa-user"></i> User</a>
           </li>
           <li>
             <a href="signin.html"><i class="fas fa-lock"></i> Login</a>
@@ -47,11 +48,28 @@
     </section>
     <main class="container">
       <section class="d-sidebar">
-        <h3>Account Dashboard</h3>
+        <div class="profile-img">
+          <div class="image-container">
+            <img src="./img/user.png" alt="user image" style="width:100%;" />
+            <form>
+              <img
+                src="./img/camera.png"
+                onclick="document.getElementById('user_img').click()"
+                id="t_c"
+                title="upload image"
+              />
+              <input type="file" id="user_img" style="display:none" />
+            </form>
+          </div>
+        </div>
+        <h3>User Settings</h3>
         <ul>
           <li><a href="create-account.html">Create Bank Account</a></li>
           <li><a href="all-transactions.html">View All Transactions</a></li>
           <li><a href="user-acct-history.html">Transaction History</a></li>
+          <li>
+            <a href="#"><i class="fas sign-out"></i>Log Out</a>
+          </li>
         </ul>
       </section>
       <section class="d-main">
@@ -112,8 +130,8 @@
     </main>
     <footer id="footer">
       <p>
-        Copyright 2019.<a href="index.html"> <span>Banka.</span></a> Design by
-        Cliff. All rights reserved.
+        Copyright 2019.<a href="index.html"> <span>Banka.</span></a> Design by Cliff. All rights
+        reserved.
       </p>
     </footer>
   </body>

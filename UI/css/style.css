@@ -17,7 +17,7 @@ header {
 }
 
 header:before {
-  content: "";
+  content: '';
   position: absolute;
   background: blue;
   height: 100%;
@@ -39,6 +39,23 @@ ul {
   float: right;
   padding: 0;
   list-style: none;
+}
+.d-sidebar ul li {
+  list-style: none;
+  display: block;
+  width: 50%;
+  min-width: 300px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.d-sidebar ul li a:hover {
+  background: coral;
+  color: #fff;
+  padding: 10px;
+  width: 50%;
+  min-width: 300px;
 }
 
 .brand,
@@ -247,6 +264,35 @@ h3 {
   border-radius: 10px 20px 10px 20px;
 }
 
+.d-sidebar .profile-img {
+  width: auto;
+  height: 200px;
+  background-color: #16174f;
+  margin-bottom: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.6;
+}
+
+.image-container {
+  position: relative;
+}
+#t_c {
+  width: 20%;
+  position: relative;
+  bottom: 70px;
+  left: 134px;
+  background-color: #f4f4f4;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.d-sidebar h3 {
+  background: coral;
+  padding: 10px;
+  border-radius: 10px 20px 10px 20px;
+  text-transform: uppercase;
+}
 .d-main {
   background: #16174f;
   float: right;
@@ -393,6 +439,26 @@ select {
     width: 40%;
     height: auto;
   }
+  .d-sidebar .b-setting {
+    margin: 0;
+  }
+
+  .d-sidebar .profile-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .image-container {
+    position: relative;
+  }
+  #t_c {
+    width: 20%;
+    left: 115px;
+    padding: 0 3px 0 0;
+  }
+  .d-sidebar h3 {
+    margin: 20px 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -430,6 +496,23 @@ select {
   .register-form {
     width: 100%;
     height: auto;
+  }
+
+  .d-sidebar .profile-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .image-container {
+    position: relative;
+  }
+  #t_c {
+    width: 20%;
+    left: 115px;
+    padding: 0 3px 0 0;
+  }
+  .d-sidebar h3 {
+    margin: 0 10px;
   }
 }
 

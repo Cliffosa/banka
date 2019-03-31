@@ -18,7 +18,7 @@ let User = [
     username: 'danny',
     password: 'danny123',
     imageUrl: '',
-    type: 'staff',
+    type: 'cashier',
     isAdmin: true
   },
   {
@@ -40,7 +40,7 @@ let User = [
     username: 'remedy',
     password: 'remedy123',
     imageUrl: '',
-    type: 'staff',
+    type: 'cashier',
     isAdmin: true
   }
 ];

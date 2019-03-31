@@ -20,8 +20,9 @@
             <ul>
                 <li><a href="admin.html"><i class="fas fa-user-secret"></i> Admin</a></li>
                 <li><a href="staff.html"><i class="fas fa-user"></i> Cashier</a></li>
+                <li><a href="account-record.html"><i class="fas fa-user"></i> User</a></li>
                 <li><a href="signin.html"><i class="fas fa-lock"></i> Login</a></li>
-                <li><a href="signup.html "><i class="fa-user-lock"></i> Register</a></li>
+                <li><a href="signup.html "><i class="fas fa-user-lock"></i> Register</a></li>
             </ul>
             <div class="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
             <div class="clear"></div>
@@ -33,7 +34,17 @@
     </section>
 <main class="container">
     <section class="d-sidebar">
-        <h3>Account Dashboard</h3>
+        <div class="profile-img">
+            <div class="image-container">
+                <img src="./img/user.png" alt="user image" style="width:100%;">
+                <form>
+                    <img src="./img/camera.png" onclick="document.getElementById('user_img').click()" id="t_c"
+                        title="upload image" />
+                    <input type='file' id="user_img" style="display:none">
+                </form>
+            </div>
+        </div>
+        <h3>Account settings</h3>
         <ul>
             <li><a href="create-account.html">Create Bank Account</a></li>
             <li><a href="all-transactions.html">View All Transaction</a></li>
@@ -45,7 +56,7 @@
             <form>
                 <label for="filter-acct">Search Account</label>
                 <input type="number" id="filter-acct" name="filter-acct" placeholder="Account Number" required />
-                <button>Search</button>
+                <button class="btn">Search</button>
             </form>
         </div>
         <div id="all-trans">
@@ -86,9 +97,11 @@
             </div>
         </div>
     </section>
-
+<div class="clear"></div>
 </main>
-
+<footer id="footer">
+    <p>Copyright 2019.<a href="index.html"> <span>Banka.</span></a> Design by Cliff. All rights reserved.</p>
+</footer>
 </body>
 </body>
 

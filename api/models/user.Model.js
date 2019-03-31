@@ -10,4 +10,4 @@ class User {
     this.isAdmin = false;
   }
 }
-module.exports = User;
+export default User;

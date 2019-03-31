@@ -33,5 +33,4 @@ let Transactions = [
     lastDeposit: new Date(Date.now())
   }
 ];
-
-module.exports = Transactions;
+export default Transactions;

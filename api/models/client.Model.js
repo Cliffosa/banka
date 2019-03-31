@@ -7,4 +7,4 @@ class Client extends User {
     this.accounts = [];
   }
 }
-module.exports = Client;
+export default Client;

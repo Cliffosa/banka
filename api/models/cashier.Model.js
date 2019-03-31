@@ -7,4 +7,4 @@ class Cashier extends User {
     this.isAdmin = true;
   }
 }
-module.exports = Cashier;
+export default Cashier;

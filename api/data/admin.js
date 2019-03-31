@@ -30,5 +30,4 @@ let Admin = [
     isCashier: true
   }
 ];
-
-module.exports = Admin;
+export default Admin;

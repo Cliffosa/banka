@@ -7,4 +7,4 @@ class Admin extends User {
     this.isAdmin = true;
   }
 }
-module.exports = Admin;
+export default Admin;

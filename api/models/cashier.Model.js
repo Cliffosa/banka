@@ -1,4 +1,4 @@
-import User from '../models/user.Model';
+import User from './user.Model';
 
 class Cashier extends User {
   constructor(firstname, lastname, email, username, password) {

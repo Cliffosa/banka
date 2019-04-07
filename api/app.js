@@ -1,13 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import router from './routes/routes';
 import cors from 'cors';
 const app = express();
 
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 4500;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
+app.use(router);
 
 app.get('/', (req, res) => {
   return res.status(200).send({

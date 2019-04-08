@@ -3,7 +3,9 @@ import UserController from '../controllers/userController';
 
 const router = Router();
 
+// register and signIn route
 router.post('/api/v1/auth/signup', UserController.registerUser);
+router.post('/api/v1/auth/signin', UserController.loginUser);
 
 // user route
 router.get('/api/v1/users', UserController.fetchAllUsers);

@@ -41,6 +41,48 @@ class UsersController {
       });
     }
   }
+  async loginUser(req, res) {
+    try {
+      const { email, password } = req.body;
+      const existUser = await data.users.filter(
+        user => user.email === email && user.password === password
+      );
+      //console.log(existUser);
+      if (!existUser) {
+        throw new Error('User with that email does not exist');
+      }
+      const result = await bcrypt.compare(password, user.password);
+      if (!result) {
+        throw new Error('Login information does not match our records');
+      }
+
+      const ordinaryUser = {
+        id: user.id,
+        firstname: user.firstname,
+        lastname: user.lastname,
+        email: user.email,
+        type: user.type,
+        isAdmin: user.isAdmin
+      };
+      //create token and its expiration
+      const ONE_WEEK = 60 * 60 * 24 * 7;
+      const jwtTokenkey = await jwt.sign({ user: ordinaryUser }, secret, {
+        expiresIn: ONE_WEEK
+      });
+      ordinaryUser.token = jwtTokenkey;
+      return res.status(200).json({
+        status: 'success',
+        message: 'Login Successfully',
+        data: ordinaryUser
+      });
+    } catch (error) {
+      return res.status(500).json({
+        status: 500,
+        message: error.message
+      });
+    }
+  }
+
   async fetchAllUsers(req, res) {
     const allUsers = await UserServices.getAllUsers();
     allUsers.map(pass => {

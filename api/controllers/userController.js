@@ -41,6 +41,20 @@ class UsersController {
       });
     }
   }
+  async fetchAllUsers(req, res) {
+    const allUsers = await UserServices.getAllUsers();
+    allUsers.map(pass => {
+      Object.defineProperty(pass, 'password', {
+        enumerable: false,
+        writable: true
+      });
+    });
+    return res.status(200).json({
+      status: 200,
+      data: allUsers,
+      message: 'Users Fetched Successfully'
+    });
+  }
 }
 const UserController = new UsersController();
 export default UserController;

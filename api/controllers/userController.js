@@ -75,6 +75,59 @@ class UsersController {
       });
     }
   }
+  async updateUser(req, res) {
+    const id = parseInt(req.params.id);
+    let userFound;
+    let userIndex;
+    await data.users.map((user, index) => {
+      if (user.id === id) {
+        userFound = user;
+        userIndex = index;
+      }
+    });
+    if (!userFound) {
+      return res.status(404).send({
+        success: 404,
+        message: 'User not found'
+      });
+    }
+    const newUser = {
+      id: userFound.id,
+      firstname: req.body.firstname || userFound.firstname,
+      lastname: req.body.lastname || userFound.lastname,
+      email: req.body.email || userFound.email,
+      type: req.body.type || userFound.type,
+      isAdmin: req.body.isAdmin || mealFound.isAdmin
+    };
+    await data.users.splice(userIndex, 1, newUser);
+    return res.status(201).send({
+      success: 201,
+      message: 'User updated successfully',
+      newUser
+    });
+  }
+  async deleteUser(req, res) {
+    const id = parseInt(req.params.id);
+    let userFound;
+    let userItem;
+    await data.users.map((user, index) => {
+      if (user.id === id) {
+        userFound = user;
+        userItem = index;
+      }
+    });
+    if (!userFound) {
+      return res.status(404).send({
+        success: 404,
+        message: 'User not found'
+      });
+    }
+    await data.users.splice(userItem, 1);
+    return res.status(200).send({
+      success: 200,
+      message: 'User deleted successfuly'
+    });
+  }
 }
 const UserController = new UsersController();
 export default UserController;

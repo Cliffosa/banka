@@ -55,6 +55,26 @@ class UsersController {
       message: 'Users Fetched Successfully'
     });
   }
+  async fetchSingleUser(req, res) {
+    let found = false;
+    const id = parseInt(req.params.id);
+    await data.users.map(user => {
+      if (user.id === id) {
+        found = true;
+        return res.status(200).send({
+          success: 200,
+          message: 'User With the ID retrieved successfully',
+          data: user
+        });
+      }
+    });
+    if (!found) {
+      return res.status(404).send({
+        success: 404,
+        message: 'User with that ID does not exist'
+      });
+    }
+  }
 }
 const UserController = new UsersController();
 export default UserController;
